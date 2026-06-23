@@ -1,0 +1,44 @@
+2026-06-23 15:45:20,055 - API_logger - INFO - API is Running Succesfully
+2026-06-23 15:45:20,832 - API_logger - INFO - API is Running Succesfully
+2026-06-23 15:45:27,806 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:27,880 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,042 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,053 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,166 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,173 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,297 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,310 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,424 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,432 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,579 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,585 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,683 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,689 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,796 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,804 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:28,914 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:28,919 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,051 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,056 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,189 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,195 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,311 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,320 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,442 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,448 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,564 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,589 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,709 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,717 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,806 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,813 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:29,935 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:29,945 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:30,052 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:30,061 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:30,180 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:30,190 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:30,304 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:30,312 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
+2026-06-23 15:45:30,429 - API_logger - INFO - Tentative de création produit : {'nom': 'ganato', 'prix': 49.99, 'stock': 1}
+2026-06-23 15:45:30,438 - API_logger - INFO - Produit créé : nom=ganato prix=49.99 stock=1
