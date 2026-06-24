@@ -88,7 +88,7 @@ class ProductList(Resource):
             }, 400
 
         new_id = create_product(nom, prix, stock)
-        logger.warning("Produit créé : nom=%s prix=%s stock=%s", nom, prix, stock)
+        logger.info("Produit créé : nom=%s prix=%s stock=%s", nom, prix, stock)
         return {
             "message": "Produit créé",
             "id": new_id
