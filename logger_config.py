@@ -19,7 +19,11 @@ class SafeRotatingFileHandler(RotatingFileHandler):
             if not self.stream:
                 self.stream = self._open()
 
-def get_logger(name=__name__, log_file=None, level=logging.INFO, max_bytes=10485760, backup_count=5):
+def get_logger(name=__name__):
+    log_file="C:/Users/MV_pe/OneDrive/Documents/Ynov/B3_(2025-2026)/Python avancé/Advanced_Python_Course_YNOV_B3/logs/app.log"
+    level=logging.INFO
+    max_bytes=3000
+    backup_count=10
     """Configure et retourne un logger réutilisable avec rotation."""
     logger = logging.getLogger(name)
     logger.setLevel(level)
