@@ -20,8 +20,7 @@ class SafeRotatingFileHandler(RotatingFileHandler):
                 self.stream = self._open()
 
 
-def get_logger(name=__name__, log_file=None, level=logging.INFO,
-               max_bytes=10485760, backup_count=5):
+def get_logger(name=__name__, log_file=None, level=logging.INFO, max_bytes=10485760, backup_count=5):
     """Configure et retourne un logger réutilisable avec rotation."""
     logger = logging.getLogger(name)
     logger.setLevel(level)
@@ -29,9 +28,7 @@ def get_logger(name=__name__, log_file=None, level=logging.INFO,
     if logger.handlers:
         return logger
 
-    formatter = logging.Formatter(
-        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    )
+    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(formatter)
@@ -42,16 +39,12 @@ def get_logger(name=__name__, log_file=None, level=logging.INFO,
         if log_dir and not os.path.exists(log_dir):
             os.makedirs(log_dir)
 
-        if platform.system() == 'Windows':
+        if platform.system() == "Windows":
             from logging import FileHandler
-            file_handler = FileHandler(log_file, encoding='utf-8')
+
+            file_handler = FileHandler(log_file, encoding="utf-8")
         else:
-            file_handler = SafeRotatingFileHandler(
-                log_file,
-                maxBytes=max_bytes,
-                backupCount=backup_count,
-                encoding='utf-8'
-            )
+            file_handler = SafeRotatingFileHandler(log_file, maxBytes=max_bytes, backupCount=backup_count, encoding="utf-8")
 
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
