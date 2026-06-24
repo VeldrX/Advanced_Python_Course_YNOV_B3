@@ -9,7 +9,7 @@ def get_all_products():
     curseur.close()
     connexion.close()
     return produits
-    
+
 
 def get_product_by_id(product_id):
     connexion = get_connection()
