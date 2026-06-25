@@ -2,8 +2,6 @@
 from flask_cors import CORS
 from flask_restx import Api, Resource, fields
 from logger_config import get_logger
-
-
 from product_repository import (
     get_all_products,
     get_product_by_id,
@@ -12,36 +10,27 @@ from product_repository import (
     delete_product,
 )
 
-import sentry_sdk
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
-sentry_sdk.init(
-    dsn=os.getenv("DSN"),
-    send_default_pii=True,
-)
-
 logger = get_logger("API_logger")
 logger.info("API is Running Successfully")
 
-
 app = Flask(__name__)
 CORS(app)
+
+
+@app.route("/")
+def home():
+    return {"message": "API Produits operationnelle — allez sur /swagger pour la doc"}
+
 
 api = Api(
     app,
     version="1.0",
     title="API Produits",
-    description="API Python Flask connectée à MySQL/phpMyAdmin",
+    description="API Python Flask connectee a MySQL/phpMyAdmin",
     doc="/swagger",
 )
 
-product_namespace = api.namespace(
-    "products",
-    description="Gestion des produits",
-)
+product_namespace = api.namespace("products", description="Gestion des produits")
 
 product_model = api.model(
     "Product",
@@ -63,13 +52,6 @@ product_response_model = api.model(
 )
 
 
-@api.route("/")
-class Home(Resource):
-    def get(self):
-        logger.info("Route GET / appelée")
-        return {"message": "API Python connectée à MySQL avec Swagger"}
-
-
 @product_namespace.route("")
 class ProductList(Resource):
     @product_namespace.marshal_list_with(product_response_model)
@@ -83,14 +65,14 @@ class ProductList(Resource):
         prix = data.get("prix")
         stock = data.get("stock")
 
-        logger.info("Tentative de création produit : %s", data)
+        logger.info("Tentative de creation produit : %s", data)
         if not nom or prix is None or stock is None:
-            logger.warning("Création refusée : données manquantes")
+            logger.warning("Creation refusee : donnees manquantes")
             return {"error": "nom, prix et stock sont obligatoires"}, 400
 
         new_id = create_product(nom, prix, stock)
-        logger.info("Produit créé : nom=%s prix=%s stock=%s", nom, prix, stock)
-        return {"message": "Produit créé", "id": new_id}, 201
+        logger.info("Produit cree : nom=%s prix=%s stock=%s", nom, prix, stock)
+        return {"message": "Produit cree", "id": new_id}, 201
 
 
 @product_namespace.route("/<int:product_id>")
@@ -119,7 +101,7 @@ class ProductItem(Resource):
         if lignes_modifiees == 0:
             api.abort(404, "Produit introuvable")
 
-        return {"message": "Produit modifié"}
+        return {"message": "Produit modifie"}
 
     def delete(self, product_id):
         lignes_supprimees = delete_product(product_id)
@@ -127,7 +109,7 @@ class ProductItem(Resource):
         if lignes_supprimees == 0:
             api.abort(404, "Produit introuvable")
 
-        return {"message": "Produit supprimé"}
+        return {"message": "Produit supprime"}
 
 
 if __name__ == "__main__":

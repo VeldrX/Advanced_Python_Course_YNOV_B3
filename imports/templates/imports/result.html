@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rapport d'import</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Rapport d'import : {{ dataset.titre }}</h1>
+    <p><strong>Fichier :</strong> {{ dataset.nom_original }}</p>
+    <ul>
+        <li>Total lignes : {{ rapport.total_lignes }}</li>
+        <li>Inserees : {{ rapport.lignes_inserees }}</li>
+        <li>Rejetees : {{ rapport.lignes_rejetees }}</li>
+    </ul>
+
+    {% if rapport.erreurs %}
+        <h2>Erreurs</h2>
+        <pre>{{ rapport.erreurs }}</pre>
+    {% endif %}
+
+    <p><a href="{% url 'upload_dataset' %}">Uploader un autre fichier</a></p>
+    <p><a href="{% url 'products_list' %}">Voir les produits</a></p>
+</body>
+</html>

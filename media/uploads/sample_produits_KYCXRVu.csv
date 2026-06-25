@@ -1,0 +1,12 @@
+product_id;nom;prix;stock
+P001;Clavier mecanique;79.99;30
+P002;Souris sans fil;49.99;50
+P003;Ecran 24 pouces;199.99;15
+P004;Casque audio;89.99;25
+P005;Webcam HD;59.99;20
+P006;Disque SSD 1To;129.99;40
+P007;Carte mere;149.99;10
+P008;Processeur i7;349.99;8
+P009;Barrette RAM 16Go;79.99;35
+P010;Alimentation 750W;109.99;12
+P011;Produit invalide;pas_un_prix;abc

@@ -1,0 +1,13 @@
+customer_id,customer_unique_id,customer_zip_code_prefix,customer_city,customer_state
+C001,U001,75001,Paris,IDF
+C002,U002,69001,Lyon,ARA
+C003,U003,13001,Marseille,PAC
+C004,U004,31000,Toulouse,OCC
+C005,U005,44000,Nantes,PDL
+,,33000,Bordeaux,NAQ
+C007,U007,59000,Lille,HDF
+C008,U008,67000,Strasbourg,GES
+C009,U009,34000,Montpellier,OCC
+, U010, 35000 , Rennes , BRE
+C011,U011,06000,Nice,PAC
+C012,U012,38000,Grenoble,ARA

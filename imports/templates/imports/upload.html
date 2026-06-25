@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Produits</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Uploader un fichier produits</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Uploader et importer</button>
+    </form>
+    <p><a href="{% url 'products_list' %}">Voir les produits</a></p>
+</body>
+</html>

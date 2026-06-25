@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produits importes</title>
+    <meta charset="utf-8">
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #eee; }
+    </style>
+</head>
+<body>
+    <h1>Produits en base</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in produits %}
+            <tr>
+                <td>{{ p.id }}</td>
+                <td>{{ p.nom }}</td>
+                <td>{{ p.prix }}</td>
+                <td>{{ p.stock }}</td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="4">Aucun produit.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="{% url 'upload_dataset' %}">Uploader un fichier</a></p>
+</body>
+</html>
